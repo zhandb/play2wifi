@@ -35,7 +35,7 @@ Furhtermore python needs the Twisted framwork. It can be installed with `apt-get
 
 == Installation ==
 This hack was developed on Ubuntu (but should also work on other linux systems). Therefore installation istruction will be for linux only (Ubuntu). It should be possible to port the code to other platform since it's only python. However I have no ideas about the dependencies (avahi for example).
-  * Copy the `play2wifi.service` script to `/etc/avahi/services/`.
+  * Copy the `play2wifi.service` script to `/etc/avahi/services/` and restart avahi `service avahi-daemon restart`.
   * Adapt the play2wifi.cfg script (at least line 3 to whatever port xbmc web interface is running). This parameter can also be overwritten with the `-p` startup parameter.
   * Launch the script `python play2wifi.py`.
   * Launch a video/podcast on the iThing and switch it over to xbmc.
